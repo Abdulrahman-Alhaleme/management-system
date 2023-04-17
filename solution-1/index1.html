@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style1.css">
+    <title>Employee Management System</title>
+</head>
+
+<body>
+    <div class="header" id="header">
+        <div class="container">
+            <a href="#" class="logo">A.E.A</a>
+            <ul class="main-nav">
+                <li><a href="#articles">Home</a></li>
+                <li><a href="#gallery">About </a></li>
+                <li><a href="#features">Cards</a></li>
+            </ul>
+        </div>
+    </div>
+    <main>
+
+
+        <!-- Start Landing -->
+        <div class="landing">
+            <div class="container">
+                <div class="text">
+                    <h1>Welcome, To "A.E.A" company</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis maiores, dolores voluptatum
+                        vitae !
+                    </p>
+                </div>
+                <div class="image">
+                    <img decoding="async" src="/solution-1/marketing-campaign-animated-video-usage.jpg" alt="" />
+                </div>
+            </div>
+            <a href="#articles" class="go-down">
+                <i class="fas fa-angle-double-down fa-2x"></i>
+            </a>
+        </div>
+        <div class="container">
+            <div class="form-container">
+                <form id="employee-form">
+                    <!-- <label for="id" class="input">ID:</label> -->
+                    <input type="text" id="id" name="id" required class="input" placeholder=" your ID">
+                    <!-- <label for="name" class="input">Full name:</label> -->
+                    <input type="text" id="name" name="name" required class="input" placeholder="your full name">
+                    <!-- <label for="department" class="input">Department:</label> -->
+                    <select id="department" name="department" required class="input">
+                        <option value="">Select department</option>
+                        <option value="Administration">Administration</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Development">Development</option>
+                        <option value="Finance">Finance</option>
+                    </select>
+                    <!-- <label for="level" class="input">Level:</label> -->
+                    <select id="level" name="level" class="input" required>
+                        <option value="">Select level</option>
+                        <option value="Junior">Junior</option>
+                        <option value="Mid-Senior">Mid-Senior</option>
+                        <option value="Senior">Senior</option>
+                    </select>
+                    <!-- <label for="image" class="input">Image URL:</label> -->
+                    <input type="text" value="/solution-1/profile.jpg" id="image" name="image" class="input" required>
+                    <label for="salary" style="display: none;">Salary:</label>
+                    <input style="display: none;" type="text" id="salary" name="salary" readonly>
+                    <button type="submit" class="input" style="background-color: #4f85b2; color: black;">Submit</button>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div id="employee-cards"></div>
+    </main>
+    <div class="footer">
+        <div class="container">
+            <p>We Are Social</p>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <p class="copyright">&copy; 2023 <span>A.E.A</span> All Right Reserved</p>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/4955f2ce5c.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
